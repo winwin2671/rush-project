@@ -48,4 +48,5 @@ body {
   font-family: 'Prompt', sans-serif;
   text-align: center;
   overflow: hidden;
+  border-right: 0.15em solid white;
 }
