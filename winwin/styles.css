@@ -19,7 +19,7 @@ html {
   padding: 2rem;
   font-family: 'Prompt', sans-serif;
   font-size: 20px;
-  color: rgb(47, 255, 57);
+  color: white;
   position: fixed;
   width: 100%;
 }
@@ -37,13 +37,41 @@ html {
   cursor: pointer;
 }
 
-.home_p {
-  padding-top: 5.7rem;
-  height: 100%;
-  width: 50%;
+.logo {
+  color: rgb(47, 255, 57);
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  letter-spacing: 2px;
 }
-.experience_p,
-.contact_p {
-  height: 100%;
-  width: 100%;
+
+.navbar-item:hover {
+  color: rgb(47, 255, 57);
+}
+
+section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px;
+  font-family: 'Prompt', sans-serif;
+}
+
+.margin {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.name {
+  color: rgb(173, 173, 173);
+  font-size: 15px;
+  font-style: italic;
+}
+div {
+  display: block;
+}
+.bigger_n {
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  font-style: normal;
 }
