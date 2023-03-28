@@ -79,6 +79,7 @@ body {
 .button {
   background-color: black;
   color: white;
+  font-family: 'Prompt', sans-serif;
   padding: 20px;
   text-align: center;
   text-decoration: none;
