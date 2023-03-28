@@ -36,7 +36,12 @@ html {
   margin-left: 40px;
   cursor: pointer;
 }
-.home_p,
+
+.home_p {
+  padding-top: 5.7rem;
+  height: 100%;
+  width: 50%;
+}
 .experience_p,
 .contact_p {
   height: 100%;
