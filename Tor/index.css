@@ -96,12 +96,12 @@ nav .fa{
     display: none;
 }
 
-@media(max-width:700px){
+@media only srceen and (max-width:700px){
     .text-box h1{
         font-size: 20px;
     }
     .port-links ul li{
-        display: :block;
+        display:block;
     }
     .port-links{
         position: absolute;
