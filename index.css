@@ -72,7 +72,8 @@ body {
   padding-left: auto;
   padding-right: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -80,9 +81,30 @@ body {
   background-color: black;
   color: white;
   font-family: 'Prompt', sans-serif;
-  padding: 20px;
+  padding: 2rem 5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .users {
+    padding-top: 20vh;
+    padding-left: auto;
+    padding-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    background-color: black;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    padding: 2rem 5rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
 }
