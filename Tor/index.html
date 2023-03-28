@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <section class="portfolio">
-    <nav>
-            
-        <a href="index.html"><img src="Tor/image/IMG_0038.jpeg"></a>
-        <div class="port-links">
+    <nav>    
+        <a href="index.html"><img src="/workspaces/rush-project/Tor/image/42_Logo.svg.png"></a>
+        <div class="port-links" id="portlinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="">home</a></li>
                 <li><a href="">About</a></li>
@@ -24,15 +24,65 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
  
 <div class="text-box">
     <h1>Portfolio</h1>
     <p>This is my portfolio it including experience and abilities ,<br>Every one will be able to learn more about me.</p>
-    <a href="" class="page-bth">Vi sit to learn more</a> 
+    <a href="" class="page-bth">Visit to learn more</a> 
 </div>
 
 </section>
-    
+
+<!------ About_me ------->
+
+<section class="about_me">
+    <h1>About me</h1>
+    <p>Everyone have a dream and follow the dream</p>
+
+    <div class="row">
+        <div class="aboutme1">
+            <h3>My profile</h3>
+            <p>I'm tor or dranpop Veeraburus 16 years old grade 11 in Nawaminthrachinuthit Triamudomsuksanomklao School<br>I'm thai people</p>
+        </div>
+        <div class="aboutme1">
+            <h3>My habits and thoughts</h3>
+            <p>I think Do things to follow your dreams look like defuse bombs someone ask me why<br>i told it mean you have skill or never do it and luckky or unlucky Everything i think it's experience<br>you must find The experience things that have never been done find a dream wll so funny some time may stressed but everyone can pass , I believe doing in exercise you like you will fun and doing more.</p>
+        </div>
+        <div class="aboutme1">
+            <h3>my favorite things to do</h3>
+            <p>I like to electrical circuit and codding program ex.Java Javascript Arduino C program pyphon</p>
+        </div>
+    </div>
+</section>
+
+<!------- campus ------>
+<section class="campus">
+    <h1>Skill and Experience</h1>
+    <p>life of experience</p>
+
+    <div class="row">
+        <div class="Skill">
+            <img src="image/arduino5804.jpg">
+            <div class="layer">
+                <h3>Aduino</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+    <script>
+        var portlinks =document.getElementById("portlinks")
+
+        function showMenu(){
+            portlinks.style.right = "0";
+        }
+        function hideMenu(){
+            portlinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
