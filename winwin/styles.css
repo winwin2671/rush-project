@@ -75,22 +75,27 @@ nav {
   color: rgb(47, 255, 57);
 }
 
-/*isde_nav*/
+/*side_nav*/
 .side_nav {
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  padding-left: 1rem;
 }
 
-.icon-bar a {
+.side_nav a {
   display: block;
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.side_nav a:hover {
+  color: rgb(47, 255, 57);
 }
 
 section {
@@ -271,6 +276,11 @@ footer {
     display: block;
     cursor: pointer;
   }
+
+  .side_nav {
+    display: none;
+  }
+
   .future_s {
     text-align: center;
     color: rgb(207, 206, 206);
