@@ -75,6 +75,24 @@ nav {
   color: rgb(47, 255, 57);
 }
 
+/*isde_nav*/
+.side_nav {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
 section {
   margin: 0px auto;
   padding: 100px 0px;
