@@ -151,6 +151,7 @@ a {
   }
   span.material-symbols-outlined {
     display: block;
+    cursor: pointer;
   }
   .name {
     padding-top: 1rem;
