@@ -7,8 +7,8 @@
 
 
 .portfolio{
-    min-height: 100vh;
-    width: 100%;
+    min-height: 120vh;
+    width: 105%;
     background-image: linear-gradient(rgba(201, 202, 210, 0.7),rgba(201,202,210,0.7)),url(https://static.vecteezy.com/system/resources/previews/014/526/826/original/aesthetic-pastel-gradient-orange-purple-and-yellow-gradient-wallpaper-illustration-perfect-for-backdrop-wallpaper-background-banner-vector.jpg);
     background-position: center;
     background-size: cover;
@@ -97,7 +97,7 @@ nav .fa{
     display: none;
 }
 
-@media only srceen and (max-width:700px){
+@media(max-width:700px){
     .text-box h1{
         font-size: 20px;
     }
@@ -107,7 +107,7 @@ nav .fa{
     .port-links{
         position: absolute;
         background: #E5BD77;
-        height: 100vh;
+        height: 100%;
         width: 200px;
         top: 0;
         right: -200px;
@@ -227,59 +227,150 @@ h3{
 
 /*------- contact ----------*/
 
-.contact{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-.contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
+.big{
     display: flex;
+    height: 100vh;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: url(image/100-60-พื้นหลังสีพาสเทล-วอลเปเปอร์มือถือสำหรับสาวหวาน.png);
-    background-size: cover;
-}
-.contact .content{
-    max-width: 800px;
-    text-align: center;
-}
-.contact .content h2{
-    font-size: 36px;
-    font-weight: 500;
-    color: #fff;
-}
-.contact .content p{
-    font-weight: 300;
-    color: #fff;
+    padding: 10px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    
 }
 .container{
+    max-width: 700px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-.container .contactInfo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.container .contactInfo .box{
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
-.container .contactInfo .box .icon{
-    min-width: 60px;
-    height: 60px;
     background: #fff;
-    justify-content: center;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition:  all 0.3 ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:Valid{
+    border-color: #9b59b6;
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
     align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
     border-radius: 50%;
-    font-size: 22px;
+    margin-right: 10px;
+    border:5px solid transparents;
+    transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+ }
+ form input[type="radio"]{
+    display: none;
+ }
+ form .button{
+    height: 45px;
+    margin: 45px 0;
+ }
+ form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+ }
+ form .button input:hover{
+    background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+ }
+ @media(max-width:700px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details{
+        margin-bottom: 300px;
+        overflow-y: scroll;
+    }
+    .user-detail::-webkit-scrollbar{
+        width: 0;
+    }
+    .Skill img{
+        width: 15vh !important;
+        left: 50%;
+        transform: translateX(100%);
+    }
+    .picture{
+        width: 14rem;
+    }
+ }
+.gmail{
+    align-items: center;
+    text-align: center;
+}
+
+.text-box{
+    bottom: 2px;
 }
