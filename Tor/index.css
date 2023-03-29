@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .portfolio{
     min-height: 100vh;
     width: 100%;
@@ -92,12 +93,16 @@ nav{
     transition: 1s;
 }
 
-@media(max-width:700px){
+nav .fa{
+    display: none;
+}
+
+@media only srceen and (max-width:700px){
     .text-box h1{
         font-size: 20px;
     }
     .port-links ul li{
-        display: :block;
+        display:block;
     }
     .port-links{
         position: absolute;
@@ -105,8 +110,176 @@ nav{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
+    nav .fa{
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .port-links ul{
+        padding: 30px;
+    }
+}
+
+/*----- about_me -----*/
+
+.about_me{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutme1{
+    flex-basis: 31%;
+    background: #E5BD77;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.aboutme1:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*------- campus ----*/
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.Skill{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.Skill img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(0,0,0,0.2);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(8, 0, 0);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*------- contact ----------*/
+
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(image/100-60-พื้นหลังสีพาสเทล-วอลเปเปอร์มือถือสำหรับสาวหวาน.png);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
 }
