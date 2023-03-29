@@ -66,12 +66,39 @@ section {
   font-size: 15px;
   font-style: italic;
 }
-div {
-  display: block;
-}
+
 .bigger_n {
   margin: 0;
   color: white;
-  font-size: 2rem;
+  font-size: 4rem;
   font-style: normal;
+  font-weight: bold;
+}
+
+.sub_n {
+  margin: 0;
+  font-style: normal;
+}
+
+img {
+  padding-top: 5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 20%;
+}
+
+img:hover {
+}
+
+/*phone sizing*/
+@media only screen and (max-width: 480px) {
+  .bigger_n {
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+  }
 }
