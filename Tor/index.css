@@ -13,6 +13,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    align-items: center;
 }
 
 nav{
@@ -383,4 +384,7 @@ form .gender-details .category{
     height: 100px;
     width: 100px;
     padding-top: 50px;
+}
+.text-box{
+    padding-right: 5%;
 }
