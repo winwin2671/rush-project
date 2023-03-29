@@ -209,6 +209,10 @@ ul {
   margin-right: auto;
   display: block;
 }
+footer {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
 
 /*phone sizing*/
 @media only screen and (max-width: 550px) {
