@@ -363,7 +363,7 @@ form .gender-details .category{
         transform: translateX(100%);
     }
     .picture{
-        width: 14rem;
+        width: 10rem;
     }
  }
 .gmail{
@@ -373,4 +373,14 @@ form .gender-details .category{
 
 .text-box{
     bottom: 2px;
+}
+.picture{
+    height: 500px;
+    width: 500px;
+    padding-top: -50px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    padding-top: 50px;
 }
