@@ -120,6 +120,62 @@ a {
   color: rgb(47, 255, 57);
   text-decoration: none;
 }
+
+.header_ex {
+  color: rgb(89, 207, 95);
+  font-size: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 0;
+}
+
+.dealt {
+  padding-left: 3rem;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: rgb(173, 173, 173);
+}
+ul {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-left: 5rem;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.lag:hover {
+  transform: scale(1.5);
+  box-shadow: 0 8px 16px 0 rgb(47, 255, 57);
+}
+
+.lag {
+  background-color: rgb(48, 71, 106);
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition: transform 0.3s;
+}
+
+.lag_title {
+  color: rgb(94, 239, 101);
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
 /*phone sizing*/
 @media only screen and (max-width: 550px) {
   .bigger_n {
@@ -155,5 +211,12 @@ a {
   }
   .name {
     padding-top: 1rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .lag:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
