@@ -178,7 +178,6 @@ ul {
 .header_c {
   color: rgb(89, 207, 95);
   font-size: 3rem;
-  padding-left: 3rem;
   margin-bottom: 0;
   text-align: center;
 }
@@ -193,10 +192,9 @@ ul {
 }
 .btn {
   padding: 2rem;
-  margin-left: auto;
+  margin-left: 40%;
   margin-right: auto;
   display: block;
-  padding-left: 27rem;
 }
 
 /*phone sizing*/
@@ -241,5 +239,11 @@ ul {
   .lag:hover {
     transform: none;
     box-shadow: none;
+  }
+  .btn {
+    padding: 2rem;
+    margin-left: 25%;
+    margin-right: auto;
+    display: block;
   }
 }
