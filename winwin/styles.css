@@ -94,6 +94,12 @@ section {
   font-style: italic;
 }
 
+.future_s {
+  text-align: center;
+  color: rgb(207, 206, 206);
+  padding: 2rem;
+}
+
 .bigger_n {
   margin: 0;
   color: white;
@@ -246,6 +252,12 @@ footer {
   span.material-symbols-outlined {
     display: block;
     cursor: pointer;
+  }
+  .future_s {
+    text-align: center;
+    color: rgb(207, 206, 206);
+    padding: 2rem;
+    font-size: 1.5rem;
   }
   .name {
     padding-top: 1rem;
